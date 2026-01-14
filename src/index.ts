@@ -28,3 +28,5 @@ export async function buscaCNPJ(cnpj: string): Promise<PJInfo> {
   const pjInfo = createPJInfo(data);
   return pjInfo;
 }
+
+//COMPILAR PARA JS BUILD DEU ERRADO
