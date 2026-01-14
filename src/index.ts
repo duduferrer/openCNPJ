@@ -1,3 +1,4 @@
+import type { cnpjError } from "./errors/cnpjError.js";
 import type { PJInfo } from "./types/pj-info.js";
 import validateCNPJ from "./utils/cnpjValidation.js";
 import createPJInfo from "./utils/createPJInfo.js";
@@ -15,7 +16,10 @@ const BASE_URL = "https://api.opencnpj.org/";
  * - 429: Limite de requisições excedido
  * - Erro de rede ao acessar a API
  * - Erro ao fazer parse da resposta
- *
+ *@throws {cnpjError}
+ * - Erro na validaçao do CNPJ
+ * - Erro no tamanho do CNPJ
+ * - Erro de repetição de digitos no CNPJ
  */
 export async function buscaCNPJ(cnpj: string): Promise<PJInfo> {
   const validCNPJ = validateCNPJ(cnpj);
