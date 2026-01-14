@@ -1,7 +1,14 @@
 {
   "name": "opencnpj",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pacote para facilitar o consumo da api opencnpj",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duduferrer/opencnpj.git"
+  },
+  "bugs": {
+    "url": "https://github.com/duduferrer/opencnpj/issues"
+  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
@@ -19,6 +26,7 @@
     "pj",
     "opencnpj"
   ],
+  "homepage": "https://github.com/duduferrer/opencnpj#readme",
   "author": "Eduardo Ferrer",
   "license": "MIT",
   "type": "module",
