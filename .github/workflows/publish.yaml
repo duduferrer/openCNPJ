@@ -8,7 +8,6 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    # Permissões mínimas necessárias para o GitHub Actions
     permissions:
       contents: read
       id-token: write
@@ -31,5 +30,3 @@ jobs:
 
       - name: Publicar no NPM
         run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
