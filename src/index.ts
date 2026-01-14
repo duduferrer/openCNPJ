@@ -1,4 +1,5 @@
 import type { PJInfo } from "./types/pj-info.js";
+import validateCNPJ from "./utils/cnpjValidation.js";
 import createPJInfo from "./utils/createPJInfo.js";
 import fetchCNPJ from "./utils/fetchCNPJ.js";
 
@@ -17,7 +18,7 @@ const BASE_URL = "https://api.opencnpj.org/";
  *
  */
 export async function buscaCNPJ(cnpj: string): Promise<PJInfo> {
-  const validCNPJ = cnpj; //TODO implementar funcao de validacao de cnpj
+  const validCNPJ = validateCNPJ(cnpj);
   const URL = BASE_URL.concat(validCNPJ);
   const data = await fetchCNPJ(URL);
   const pjInfo = createPJInfo(data);
