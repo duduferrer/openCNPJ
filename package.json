@@ -1,15 +1,20 @@
 {
   "name": "opencnpj",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pacote para facilitar o consumo da api opencnpj",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsx src/index.ts"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "cnpj",
+    "api",
+    "pj",
+    "opencnpj"
+  ],
+  "author": "Eduardo Ferrer",
+  "license": "MIT",
   "type": "module",
   "devDependencies": {
     "@types/node": "^25.0.7",
