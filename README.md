@@ -6,6 +6,10 @@ Biblioteca em typescript para consumo da API. Mais informações em: https://ope
 
 ## Uso/Exemplos
 
+```
+npm install opencnpj
+```
+
 ```javascript
 import { buscaCNPJ } from "opencnpj";
 

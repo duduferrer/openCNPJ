@@ -1,6 +1,6 @@
 {
   "name": "opencnpj",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Pacote para facilitar o consumo da api opencnpj",
   "repository": {
     "type": "git",
