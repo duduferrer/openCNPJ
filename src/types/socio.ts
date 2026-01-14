@@ -1,8 +1,8 @@
 export interface Socio {
-  nome: string;
-  cnpjOuCpf: string;
-  qualificacao: string; //TODO usar como base a lista da receita
-  dataEntrada: Date;
-  identificador: "Pessoa Física" | "Pessoa Jurídica";
-  faixaEtaria: "String"; //TODO transformar em intervalo de tempo
+  nome: string | undefined;
+  cnpjOuCpf: string | undefined;
+  qualificacao: string | undefined; //TODO usar como base a lista da receita
+  dataEntrada: Date | undefined;
+  identificador: "Pessoa Física" | "Pessoa Jurídica" | undefined;
+  faixaEtaria: String | undefined; //TODO transformar em intervalo de tempo
 }

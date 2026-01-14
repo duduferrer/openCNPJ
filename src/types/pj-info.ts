@@ -8,12 +8,12 @@ export interface PJInfo {
   nomeFantasia: string;
 
   situacaoCadastral: string;
-  dataSituacaoCadastral: Date;
-  matrizFilial: "Matriz" | "Filial";
-  data_inicio_atividade: Date;
+  dataSituacaoCadastral: Date | undefined;
+  matrizFilial: "Matriz" | "Filial" | undefined;
+  dataInicioAtividade: Date | undefined;
 
   cnaePrincipal: string;
-  cnaesSecundarios: string[];
+  cnaesSecundarios: string[] | undefined;
   naturezaJuridica: string;
 
   endereco: Endereco;
@@ -22,9 +22,9 @@ export interface PJInfo {
   capitalSocial: Number;
   porteEmpresa: string; //TODO adicionar valores pre definidos
   opcaoSimples: string; //TODO verificar se a opcao é S/N
-  dataOpcaoSimples: Date;
+  dataOpcaoSimples: Date | undefined;
   opcaoMei: string; //TODO verificar opcao S/N
-  dataOpcaoMei: Date;
+  dataOpcaoMei: Date | undefined;
 
-  socios: Socio[];
+  socios: Socio[] | undefined;
 }

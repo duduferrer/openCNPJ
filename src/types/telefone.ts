@@ -1,5 +1,5 @@
 export interface Telefone {
-  ddd: string;
-  numero: string;
-  isFax: boolean;
+  ddd: string | undefined;
+  numero: string | undefined;
+  isFax: boolean | undefined;
 }
